@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+export const windowHeight = Dimensions.get('window').height;
 
 export const colors = {
   colorPrimary : '#6333E3',
@@ -21,7 +23,7 @@ export const styles = StyleSheet.create({
   },
   heroContainer:{
     width:'100%',
-    height: 972,
+    height: windowHeight * 1.45,
     backgroundColor: colors.colorPrimary
   },
   navBar:{
@@ -229,7 +231,7 @@ export const styles = StyleSheet.create({
   },
   whyUsContainer:{
     width:'100%',
-    height: 899,
+    height: windowHeight * 1.35,
     backgroundColor: colors.colorTextNormal
   },
   txtHeading:{
@@ -312,7 +314,7 @@ export const styles = StyleSheet.create({
   },
   hiwContainer:{
     width:'100%',
-    height:1030,
+    height: windowHeight *1.6,
     backgroundColor: colors.colorTextNormal
   },
   tabLine:{
@@ -366,7 +368,7 @@ export const styles = StyleSheet.create({
   },
   hiwContent:{
     width:'90%',
-    height:599,
+    height: windowHeight * 0.95,
     borderColor: colors.colorTextLight,
     borderWidth: 2,
     borderRadius: 8,
@@ -381,7 +383,7 @@ export const styles = StyleSheet.create({
   },
   benefitsContainer:{
     width:'100%',
-    height:1098,
+    height: windowHeight * 1.6 ,
     backgroundColor: colors.colorTextNormal
   },
   benefitsContent:{
@@ -390,7 +392,7 @@ export const styles = StyleSheet.create({
   },
   reviewsContainer:{
     width:'100%',
-    height:851,
+    height: windowHeight * 1.4,
     backgroundColor: colors.colorTextNormal
   },
   imageReviewbg:{
@@ -414,7 +416,7 @@ export const styles = StyleSheet.create({
   },
   reviewsContent:{
     width:'95.5%',
-    height:458,
+    height: windowHeight *0.75 ,
     backgroundColor: colors.colorPrimary,
     borderRadius:20,
     padding:22.5,
@@ -453,12 +455,12 @@ export const styles = StyleSheet.create({
   },
   regNowContainer:{
     width:'100%',
-    height:538,
+    height: windowHeight*0.75,
     backgroundColor: colors.colorTextNormal
   },
   footerContainer:{
     width:'100%',
-    height:536,
+    height: windowHeight * 0.78,
     backgroundColor: colors.colorPrimary
   },
   footerLogoPadding:{
